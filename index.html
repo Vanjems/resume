@@ -26,7 +26,9 @@
   }
   main { max-width: 760px; margin: 0 auto; }
 
-  header { padding-bottom: 8px; border-bottom: 2px solid var(--rule); }
+  header { padding-bottom: 8px; border-bottom: 2px solid var(--rule); display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+  .header-text { min-width: 0; flex: 1; }
+  .photo { flex: none; width: 118px; height: 118px; object-fit: cover; object-position: center 20%; border-radius: 4px; border: 1.5px solid var(--rule); }
   h1 {
     margin: 0 0 4px;
     font-size: 40px;
@@ -74,6 +76,8 @@
   @media (max-width: 520px) {
     body { font-size: 15px; padding-block: 20px 32px; }
     h1 { font-size: 32px; }
+    header { gap: 12px; }
+    .photo { width: 84px; height: 84px; }
     .place { text-align: left; }
     .date { white-space: normal; }
   }
@@ -81,6 +85,7 @@
 
 <main>
   <header>
+    <div class="header-text">
     <h1>Ivan James Estores</h1>
     <p class="tagline">Junior Software Engineer</p>
     <p class="contact">
@@ -90,6 +95,8 @@
       <a href="https://github.com/Vanjems">GitHub</a><span class="sep" aria-hidden="true">&#10040;</span>
       <span>General Santos City</span>
     </p>
+    </div>
+    <img class="photo" src="Pict-ID.jpeg" alt="Portrait of Ivan James Estores" width="118" height="118">
   </header>
 
   <section>
