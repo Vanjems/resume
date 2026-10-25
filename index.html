@@ -1,0 +1,167 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ivan James Estores</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+  /* Layout: one narrow, ruled column in the style of the reference resume. Light paper ground, serif text, bold org and date on one line, italic role and place beneath. */
+  :root {
+    --bg: #fcfcfa;
+    --fg: #1d1f21;
+    --muted: #55595e;
+    --rule: #1d1f21;
+    --link: #1a5fd0;
+    --font-body: "Tinos", "Times New Roman", Times, serif;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.42;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 28px 40px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+
+  header { padding-bottom: 8px; border-bottom: 2px solid var(--rule); }
+  h1 {
+    margin: 0 0 4px;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-wrap: balance;
+  }
+  .tagline { margin: 0 0 6px; font-style: italic; color: var(--muted); font-size: 16px; }
+  .contact { margin: 0; font-size: 15.5px; display: flex; flex-wrap: wrap; column-gap: 8px; row-gap: 2px; align-items: baseline; }
+  .contact .sep { font-size: 13px; }
+  .contact span, .contact a { min-width: 0; overflow-wrap: anywhere; }
+
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+
+  section { margin-top: 18px; }
+  h2 {
+    margin: 0 0 6px;
+    padding-bottom: 1px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--rule);
+  }
+
+  .entry { margin-top: 10px; }
+  .entry:first-of-type { margin-top: 4px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; column-gap: 16px; }
+  .row > * { min-width: 0; }
+  .org { font-weight: 700; }
+  .date { font-weight: 700; white-space: nowrap; }
+  .role, .place { font-style: italic; color: var(--muted); }
+  .place { text-align: right; }
+
+  ul { list-style: none; margin: 3px 0 0; padding: 0; display: grid; gap: 2px; }
+  li { position: relative; padding-left: 24px; }
+  li::before { content: "\25AA"; position: absolute; left: 6px; top: 0; }
+  strong { font-weight: 700; }
+
+  .summary { margin: 4px 0 0; }
+  .skills p { margin: 2px 0 0; }
+
+  @media (max-width: 520px) {
+    body { font-size: 15px; padding-block: 20px 32px; }
+    h1 { font-size: 32px; }
+    .place { text-align: left; }
+    .date { white-space: normal; }
+  }
+</style>
+
+<main>
+  <header>
+    <h1>Ivan James Estores</h1>
+    <p class="tagline">Junior Software Engineer</p>
+    <p class="contact">
+      <span>ivanjamesfiles@gmail.com</span><span class="sep" aria-hidden="true">&#10040;</span>
+      <span>+63 906 255 5315</span><span class="sep" aria-hidden="true">&#10040;</span>
+      <a href="https://www.linkedin.com/in/ivanestores">LinkedIn</a><span class="sep" aria-hidden="true">&#10040;</span>
+      <a href="https://github.com/Vanjems">GitHub</a><span class="sep" aria-hidden="true">&#10040;</span>
+      <span>General Santos City</span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row"><span class="org">Notre Dame of Dadiangas University</span><span class="date">May 2025</span></div>
+      <div class="row"><span class="role">Bachelor of Science in Computer Science</span><span class="place">General Santos City</span></div>
+      <ul>
+        <li>Graduated <strong>Magna Cum Laude</strong> (Aug 2021 &ndash; May 2025)</li>
+        <li>NDDU Research Forum 2025 &ndash; <strong>Best Thesis in Education</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <p><strong>Technical Skills:</strong> TypeScript, JavaScript, SQL, React, Next.js, Node.js, Fastify, tRPC, PostgreSQL, Prisma, Supabase, React Native, Capacitor, Electron, Tauri; working knowledge of Python and Rust</p>
+    <p><strong>AI:</strong> OpenAI, Anthropic, Gemini, Vercel AI SDK, Model Context Protocol</p>
+    <p><strong>Tools:</strong> Git, GitHub Actions, Docker, Vercel, Railway, Sentry, Vitest, Playwright</p>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="org">Juan Ally (Your AI Business Partner)</span><span class="date">Nov 2025 &ndash; Oct 2026</span></div>
+      <div class="row"><span class="role">Junior Software Engineer</span><span class="place">General Santos City</span></div>
+      <ul>
+        <li>Primary developer of <strong>JuanAlly</strong> (1,373 of 2,139 commits), an AI point-of-sale app for small shops in the Philippines and Vietnam, shipped on <strong>web and native iOS/Android</strong> with React, Capacitor, Fastify, Prisma, and PostgreSQL.</li>
+        <li>Built <strong>offline-friendly caching</strong>, push notifications, an English/Vietnamese interface, Polar payments, and Excel/Word data import.</li>
+        <li>Set up <strong>CI/CD</strong> with GitHub Actions, a Dockerized backend, and Sentry monitoring.</li>
+        <li>Acted as de facto <strong>tech lead</strong>: owned architecture and UI/UX decisions and guided OJT interns.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">Kave Guild</span><span class="date">Jun 2024 &ndash; Jul 2024</span></div>
+      <div class="row"><span class="role">Frontend Developer (OJT Intern)</span><span class="place">Philippines</span></div>
+      <ul><li>Frontend development internship at a <strong>Web3</strong> company.</li></ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="row"><span class="org">Chattoflow</span><span class="date">Nov 2025 &ndash; Apr 2026</span></div>
+      <div class="row"><span class="role">Visual workflow automation &middot; Primary developer (482 of 726 commits)</span></div>
+      <ul>
+        <li>Built a <strong>Zapier-style canvas</strong> for chaining triggers and actions, with <strong>LLM nodes</strong> (OpenAI, Anthropic, Gemini) and durable runs on <strong>Inngest</strong>.</li>
+        <li>Stack: tRPC, Prisma on Postgres, React Flow, Better Auth, and Polar billing.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">JobFndr</span><span class="date">Jul 2026 &ndash; Aug 2026</span></div>
+      <div class="row"><span class="role">AI remote-job matching &middot; Core contributor</span></div>
+      <ul>
+        <li>Co-built a platform that aggregates <strong>10+ job sources</strong>, checks country eligibility, and ranks fresh matches against a user profile with <strong>OpenAI</strong>.</li>
+        <li>Wrote hand-rolled <strong>PKCE OAuth</strong> and Postgres <strong>row-level security</strong>; contributed to a ~2,000-test suite and Railway deployments.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">Specwright</span><span class="date">Jul 2026 &ndash; Aug 2026</span></div>
+      <div class="row"><span class="role">AI system-design workspace &middot; Sole developer</span></div>
+      <ul>
+        <li>Turns a plain-English prompt into an editable <strong>architecture diagram</strong> on a real-time shared canvas, then exports a Markdown spec (Next.js 16, Liveblocks, Trigger.dev, Vercel AI SDK).</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">Other work</span></div>
+      <ul>
+        <li><strong>Merky</strong>: Electron and Tauri AI desktop companion with MCP. <strong>Bantay Pinas</strong>: AI news dashboard.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+</body></html>
