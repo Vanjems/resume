@@ -73,6 +73,21 @@
   .summary { margin: 4px 0 0; }
   .skills p { margin: 2px 0 0; }
 
+  @page { size: Letter; margin: 0.45in 0.5in; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 13px; line-height: 1.32; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    main { max-width: none; }
+    h1 { font-size: 34px; }
+    .tagline { font-size: 14.5px; }
+    .contact { font-size: 13px; column-gap: 6px; }
+    .photo { width: 92px; height: 92px; }
+    header { padding-bottom: 6px; }
+    section { margin-top: 10px; }
+    .entry { margin-top: 7px; break-inside: avoid; }
+    h2 { break-after: avoid; }
+    .no-print { display: none; }
+  }
+
   @media (max-width: 520px) {
     body { font-size: 15px; padding-block: 20px 32px; }
     h1 { font-size: 32px; }
@@ -93,7 +108,8 @@
       <span>+63 906 255 5315</span><span class="sep" aria-hidden="true">&#10040;</span>
       <a href="https://www.linkedin.com/in/ivanestores">LinkedIn</a><span class="sep" aria-hidden="true">&#10040;</span>
       <a href="https://github.com/Vanjems">GitHub</a><span class="sep" aria-hidden="true">&#10040;</span>
-      <span>General Santos City</span>
+      <span>General Santos City</span><span class="sep no-print" aria-hidden="true">&#10040;</span>
+      <a class="no-print" href="Ivan-James-Estores-Resume.pdf">PDF</a>
     </p>
     </div>
     <img class="photo" src="Pict-ID.jpeg" alt="Portrait of Ivan James Estores" width="118" height="118">
